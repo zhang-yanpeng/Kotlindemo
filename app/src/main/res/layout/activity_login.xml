@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".activitys.LoginActivity">
+
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_44"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_100"
+        android:gravity="center"
+        android:text="@string/telephone_number"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ed_account"
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="@dimen/dp_44"
+        android:layout_marginTop="@dimen/dp_100"
+        android:layout_marginRight="@dimen/dp_30"
+        android:background="@color/colorWhite"
+        android:maxLength="11"
+        android:maxLines="1"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintLeft_toRightOf="@id/tv_phone"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_pwd"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_44"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_10"
+        android:gravity="center"
+        android:text="@string/password"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_phone" />
+
+    <EditText
+        android:id="@+id/ed_pwd"
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="@dimen/dp_44"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_30"
+        android:background="@color/colorWhite"
+        android:maxLength="11"
+        android:maxLines="1"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintLeft_toRightOf="@id/tv_phone"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ed_account" />
+
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:layout_width="@dimen/dp_30"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="@dimen/dp_30"
+        app:layout_constraintTop_toBottomOf="@id/tv_pwd"
+        android:background="@color/colorWhite"
+        android:layout_height="@dimen/dp_30" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
