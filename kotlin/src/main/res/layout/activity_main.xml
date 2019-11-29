@@ -22,7 +22,7 @@
         android:layout_width="match_parent"
         android:background="@color/colorPrimary"
         android:layout_margin="@dimen/dp_10"
-        android:text="@string/button1"
+        android:text="@string/button2"
         android:textColor="@color/colorWhite"
         android:textSize="@dimen/sp_10"
         android:layout_height="@dimen/dp_44" />
@@ -32,7 +32,7 @@
         android:layout_width="match_parent"
         android:background="@color/colorPrimary"
         android:layout_margin="@dimen/dp_10"
-        android:text="@string/button1"
+        android:text="@string/button3"
         android:textColor="@color/colorWhite"
         android:textSize="@dimen/sp_10"
         android:layout_height="@dimen/dp_44" />
@@ -42,7 +42,7 @@
         android:layout_width="match_parent"
         android:background="@color/colorPrimary"
         android:layout_margin="@dimen/dp_10"
-        android:text="@string/button1"
+        android:text="@string/button4"
         android:textColor="@color/colorWhite"
         android:textSize="@dimen/sp_10"
         android:layout_height="@dimen/dp_44" />
@@ -53,6 +53,16 @@
         android:background="@color/colorPrimary"
         android:layout_margin="@dimen/dp_10"
         android:text="@string/click_more_has_suprice"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/sp_10"
+        android:layout_height="@dimen/dp_44" />
+
+    <Button
+        android:id="@+id/btn6"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_margin="@dimen/dp_10"
+        android:text="跳转"
         android:textColor="@color/colorWhite"
         android:textSize="@dimen/sp_10"
         android:layout_height="@dimen/dp_44" />

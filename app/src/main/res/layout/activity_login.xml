@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@color/colorPrimary66"
     tools:context=".activitys.LoginActivity">
 
     <TextView
@@ -63,12 +63,25 @@
 
 
     <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/cb_check"
         android:layout_width="@dimen/dp_30"
-        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_height="@dimen/dp_30"
         android:layout_marginTop="@dimen/dp_30"
-        app:layout_constraintTop_toBottomOf="@id/tv_pwd"
         android:background="@color/colorWhite"
-        android:layout_height="@dimen/dp_30" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_pwd" />
+
+    <Button
+        android:id="@+id/btn_jump"
+        android:layout_width="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cb_check"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@color/colorPrimary"
+        android:text="跳转"
+        android:textColor="@color/colorWhite"
+        android:layout_height="wrap_content" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

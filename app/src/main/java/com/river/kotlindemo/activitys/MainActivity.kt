@@ -1,30 +1,25 @@
 package com.river.kotlindemo.activitys
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
-import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.river.kotlindemo.R
-import com.river.kotlindemo.utils.Boy
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
-
-    //  使用char构建字符串
-    val aString: String = String(charArrayOf(' ', 'a'))
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
+//        btn1.setOnClickListener { toSecondActivity() }
+        btn2.setOnClickListener { toSecondActivity() }
     }
 
-    fun getName(): String? {
-//        return "xiaoming"
-        return null
+    fun toSecondActivity() {
+        var it = Intent()
+        it.setClass(this, SecondActivity::class.java)
+        startActivity(it)
     }
 
-    fun getValue() {
-        println("这是getValue()")
-    }
+
 }

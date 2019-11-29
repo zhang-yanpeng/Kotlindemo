@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_100"
+    android:layout_height="@dimen/dp_100">
+
+    <ImageView
+        android:id="@+id/iv_float"
+        android:layout_width="@dimen/dp_50"
+        android:layout_gravity="center"
+        android:layout_height="@dimen/dp_50"
+        android:src="@drawable/ic_launcher_background" />
+
+</FrameLayout>

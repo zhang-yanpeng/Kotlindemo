@@ -1,5 +1,6 @@
 package com.chuange.kotlin.activity
 
+import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import androidx.annotation.RequiresApi
@@ -234,6 +235,11 @@ class MainActivity : AppCompatActivity() {
                 else -> ""
             }
 
+        }
+
+        btn5.setOnClickListener{
+            var intent:Intent = Intent(this,SecondActivity::class.java)
+            startActivity(intent)
         }
 
     }
