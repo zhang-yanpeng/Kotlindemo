@@ -8,7 +8,8 @@
 
 
 1203  Recycleview的使用
-重点：
+-----------------
+重点 适配器（涉及到类的集成）：
 class KtAdapter(var mContext: Context, var mList: ArrayList<People>) : RecyclerView.Adapter<KtAdapter.KTholder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): KTholder {
