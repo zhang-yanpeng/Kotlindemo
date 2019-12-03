@@ -14,7 +14,6 @@ class KtAdapter(var mContext: Context, var mList: ArrayList<People>) : RecyclerV
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): KTholder {
         return KTholder(LayoutInflater.from(mContext).inflate(R.layout.item_people, parent, false))
-//        return KTholder(View.inflate(mContext, R.layout.item_people,null))
     }
 
     override fun getItemCount(): Int {
