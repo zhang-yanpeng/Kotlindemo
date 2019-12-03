@@ -83,7 +83,7 @@ class SecondActivity : AppCompatActivity() {
      * 判断悬浮窗权限
      */
     private fun commonROMPermissionCheck(context: Context): Boolean {
-        var result: Boolean? = true
+        var result: Boolean = true
         if (Build.VERSION.SDK_INT >= 23) {
             try {
                 val clazz = Settings::class.java
@@ -94,7 +94,7 @@ class SecondActivity : AppCompatActivity() {
 
             }
         }
-        return result!!
+        return result
     }
 
 }

@@ -1,6 +1,4 @@
-package com.chuange.kotlin.utils
-
-import android.util.Log
+package com.zyp.kotlin.utils
 
 /**
  * @ClassName LogUtils

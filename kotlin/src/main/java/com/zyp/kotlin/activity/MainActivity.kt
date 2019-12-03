@@ -1,11 +1,11 @@
-package com.chuange.kotlin.activity
+package com.zyp.kotlin.activity
 
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
-import com.chuange.kotlin.R
+import com.zyp.kotlin.R
 import kotlinx.android.synthetic.main.activity_main.*
 import org.jetbrains.anko.toast
 
