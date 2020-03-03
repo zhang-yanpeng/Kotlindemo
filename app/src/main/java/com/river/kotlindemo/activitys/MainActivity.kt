@@ -20,6 +20,4 @@ class MainActivity : AppCompatActivity() {
         it.setClass(this, SecondActivity::class.java)
         startActivity(it)
     }
-
-
 }

@@ -237,8 +237,14 @@ class MainActivity : AppCompatActivity() {
 
         }
 
-        btn5.setOnClickListener{
-            var intent:Intent = Intent(this,SecondActivity::class.java)
+        btn5.setOnClickListener {
+            var intent: Intent = Intent(this, SecondActivity::class.java)
+            startActivity(intent)
+        }
+
+//      自定义Beaavior
+        btn7.setOnClickListener {
+            var intent: Intent = Intent(this, RecycleviewActivity::class.java)
             startActivity(intent)
         }
 
