@@ -689,5 +689,8 @@
     <dimen name="dp_665">665dp</dimen>
     <dimen name="dp_666">666dp</dimen>
     <dimen name="dp_667">667dp</dimen>
+    
+
+    <dimen name="common_password_border_width">2dp</dimen>
 
 </resources>

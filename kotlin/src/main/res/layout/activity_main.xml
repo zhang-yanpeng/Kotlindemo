@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".activity.MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
     <Button
         android:id="@+id/btn1"
@@ -76,5 +80,39 @@
         android:textColor="@color/colorWhite"
         android:textSize="@dimen/sp_10"
         android:layout_height="@dimen/dp_44" />
+
+    <Button
+        android:id="@+id/btn8"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        android:layout_margin="@dimen/dp_10"
+        android:background="@color/colorPrimary"
+        android:text="展示不同的字体"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/sp_10" />
+
+    <Button
+        android:id="@+id/btn9"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        android:layout_margin="@dimen/dp_10"
+        android:background="@color/colorPrimary"
+        android:text="展示自定义View"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/sp_10" />
+
+
+
+
+<!--    <com.kenny.separatededittext.SeparatedEditText-->
+<!--        android:id="@+id/edit_underline"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:inputType="number"-->
+<!--        app:blockSpacing="10dp"-->
+<!--        app:borderColor="@color/lightGrey"-->
+<!--        app:separateType="@integer/type_underline"-->
+<!--        app:textColor="@color/colorAccent" />-->
 
 </LinearLayout>

@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.RecycleviewActivity"></activity>
+        <activity android:name=".activity.ViewActivity"></activity>
+        <activity android:name=".activity.SelfActivity" />
+        <activity android:name=".activity.FontActivity" />
+        <activity android:name=".activity.RecycleviewActivity" />
         <activity android:name=".activity.SecondActivity" />
         <activity android:name=".activity.MainActivity">
             <intent-filter>

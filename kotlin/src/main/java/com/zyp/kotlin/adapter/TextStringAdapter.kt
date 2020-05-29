@@ -17,7 +17,10 @@ class TextStringAdapter(var mcontext:Context,var datas:ArrayList<String>):Recycl
 //    var inflater:LayoutInflater = LayoutInflater.from(mcontext)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TextVH {
-        return TextVH(LayoutInflater.from(mcontext).inflate(R.layout.item_text,parent,false))
+        var view = LayoutInflater.from(mcontext).inflate(R.layout.item_text, parent, false)
+        view.layoutParams.width = parent.width / 2
+        var vh = TextVH(view)
+        return vh
     }
 
     override fun getItemCount(): Int {
@@ -27,8 +30,6 @@ class TextStringAdapter(var mcontext:Context,var datas:ArrayList<String>):Recycl
     override fun onBindViewHolder(holder: TextVH, position: Int) {
         holder.text.text=datas.get(position)
     }
-
-
 
     class TextVH(itemview : View) :RecyclerView.ViewHolder(itemview){
         var text:TextView = itemview.tv_item_text

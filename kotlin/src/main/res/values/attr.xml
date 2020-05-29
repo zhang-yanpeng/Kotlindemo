@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CodeEditText">
+        <attr name="strokeHeight" format="dimension" />
+        <attr name="strokeWidth" format="dimension" />
+        <attr name="strokePadding" format="dimension" />
+        <attr name="strokeBackground" format="color" />
+        <attr name="strokeLength" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="PasswordView">
+        <attr name="passwordLength" format="integer" />
+        <attr name="passwordPadding" format="dimension" />
+        <attr name="passwordSize" format="dimension" />
+        <attr name="textColor" format="color" />
+        <attr name="pwvBorderColor" format="color" />
+        <attr name="pwvSelectBorderColor" format="color" />
+        <attr name="pwvBorderWidth" format="dimension" />
+        <attr name="cursorFlashTime" format="integer" />
+        <attr name="isCursorEnable" format="boolean" />
+        <attr name="cipherEnable" format="boolean" />
+        <attr name="cursorColor" format="color" />
+        <attr name="mode" format="enum">
+            <enum name="underline" value="0" />
+            <enum name="rect" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="AnnieTwoLineView">
+        <!--     主要的背景颜色-->
+        <attr name="mainColor" format="color" />
+        <!--     第二种背景颜色-->
+        <attr name="lineColor" format="color" />
+        <!--     条纹宽度-->
+        <attr name="lineWidth" format="dimension" />
+        <!--      圆角-->
+        <attr name="rectRadios" format="dimension" />
+    </declare-styleable>
+
+</resources>

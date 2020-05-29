@@ -11,7 +11,7 @@ class RecycleviewActivity : AppCompatActivity() {
 
     var data: ArrayList<String> = ArrayList()
     var textAdapter:TextStringAdapter = TextStringAdapter(this,data)
-    var layoutManager:LinearLayoutManager = LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false)
+    var layoutManager:LinearLayoutManager = LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

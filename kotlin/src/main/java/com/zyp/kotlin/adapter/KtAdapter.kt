@@ -1,6 +1,7 @@
 package com.zyp.kotlin.adapter
 
 import android.content.Context
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,15 +10,33 @@ import androidx.recyclerview.widget.RecyclerView
 import com.zyp.kotlin.R
 import com.zyp.kotlin.bean.People
 import kotlinx.android.synthetic.main.item_people.view.*
+import java.util.*
 
 /**
  * Created by zhangyanpeng on 2019/12/3
  */
 class KtAdapter(var mContext: Context, var mList: ArrayList<People>) : RecyclerView.Adapter<KtAdapter.KTholder>() {
 
+    var inflater: LayoutInflater
+
+    var divideNum = 2
+
+    init {
+        inflater = LayoutInflater.from(mContext)
+    }
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): KTholder {
-        return KTholder(LayoutInflater.from(mContext).inflate(R.layout.item_people, parent, false))
-//        return KTholder(View.inflate(mContext, R.layout.item_people,null))
+        var view = inflater.inflate(R.layout.item_people, parent, false)
+        var vh = KTholder(view)
+        if (viewType == 1000) {
+            Log.i("kt", "宽度   ${parent.measuredWidth}      ${parent.width}")
+            vh.itemView.layoutParams.width = parent.measuredWidth / divideNum
+        }
+        return vh
+    }
+
+    override fun getItemViewType(position: Int): Int {
+        return 1000
     }
 
     override fun getItemCount(): Int {

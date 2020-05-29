@@ -1,7 +1,7 @@
 package com.zyp.kotlin.activity
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.zyp.kotlin.R
 import com.zyp.kotlin.adapter.KtAdapter
@@ -12,8 +12,8 @@ import org.jetbrains.anko.toast
 
 class SecondActivity : AppCompatActivity() {
     var peoples: ArrayList<People> = ArrayList()
-    var adapter: KtAdapter = KtAdapter(this, peoples)
-    var layoutManager: LinearLayoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
+    lateinit var adapter: KtAdapter
+    var layoutManager: LinearLayoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,6 +24,8 @@ class SecondActivity : AppCompatActivity() {
         peoples.add(People("张三", "20", "男"))
         peoples.add(People("张三四", "20", "男"))
         peoples.add(People("张三", "20", "男"))
+
+        adapter= KtAdapter(this, peoples)
         kt_recycle.adapter = adapter
         kt_recycle.layoutManager = layoutManager
         adapter.notifyDataSetChanged()

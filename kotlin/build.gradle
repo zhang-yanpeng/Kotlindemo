@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId "com.chuange.kotlin"
-        minSdkVersion 19
+        minSdkVersion 21
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
@@ -42,4 +42,7 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
 
+    implementation 'com.justkiddingbaby:vercodeedittext:1.1.0'
+
+    implementation 'com.github.WGwangguan:SeparatedEditText:v1.2'
 }
