@@ -5,10 +5,12 @@ import android.os.Build
 import android.os.Bundle
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
+import com.aliyun.solution.longvideo.activity.AlivcHomeActivity
 import com.zyp.kotlin.R
 import kotlinx.android.synthetic.main.activity_main.*
 import org.jetbrains.anko.sdk27.coroutines.onClick
 import org.jetbrains.anko.toast
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -112,6 +114,11 @@ class MainActivity : AppCompatActivity() {
         btn9.onClick {
             var intent: Intent = Intent(this@MainActivity, ViewActivity::class.java)
             startActivity(intent)
+        }
+
+        btn10.onClick {
+            val intent = Intent(context, AlivcHomeActivity::class.java)
+            context.startActivity(intent)
         }
 
     }

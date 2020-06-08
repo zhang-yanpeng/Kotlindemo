@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".activity.MainActivity">
 
@@ -98,6 +97,16 @@
         android:layout_margin="@dimen/dp_10"
         android:background="@color/colorPrimary"
         android:text="展示自定义View"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/sp_10" />
+
+    <Button
+        android:id="@+id/btn10"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        android:layout_margin="@dimen/dp_10"
+        android:background="@color/colorPrimary"
+        android:text="阿里云长视频播放器"
         android:textColor="@color/colorWhite"
         android:textSize="@dimen/sp_10" />
 
