@@ -1,8 +1,0 @@
-<resources>
-    <string name="app_name">Kotlin</string>
-    <string name="button1">自定义View</string>
-    <string name="button2">按钮2</string>
-    <string name="button3">按钮3</string>
-    <string name="button4">按钮4</string>
-    <string name="click_more_has_suprice">多点几下 有惊喜哦</string>
-</resources>

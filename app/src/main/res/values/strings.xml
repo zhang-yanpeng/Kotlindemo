@@ -1,5 +1,0 @@
-<resources>
-    <string name="app_name">KotlinDemo</string>
-    <string name="telephone_number">手机号：</string>
-    <string name="password">密 码：</string>
-</resources>
