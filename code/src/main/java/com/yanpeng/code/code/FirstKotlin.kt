@@ -1,10 +1,12 @@
 package com.yanpeng.code.code
 
+import java.util.*
+
 /**
  * kotlin 文件 用于体验kotlin
  */
-//fun main() {
-//    //1.变量 的声明
+fun main() {
+    //1.变量 的声明
 //    var s:Byte =1
 //    val s1 =1
 //    var a:Int =1
@@ -45,13 +47,16 @@ package com.yanpeng.code.code
 //        println(i)
 //    }
 //
-//    println("能不能打印降序区间呢？当然可以借助downTo")
+//    println("能不能打印降序区间呢？当然可以!  借助downTo")
 //    var r2 = 10 downTo 5
 //    for (i in r2){
 //        println(i)
 //    }
-//
-//}
+
+    var uu = UUID.randomUUID().toString()
+    println("UUID:${uu}")
+    inc(1)
+}
 
 /**
  * 打印出各种数据类型的最大值，最小值
@@ -63,4 +68,12 @@ fun getMax(){
     println("long 的最大值：${Long.MAX_VALUE}   和它的最小值：${Long.MIN_VALUE}")
     println("float 的最大值：${Float.MAX_VALUE}   和它的最小值：${Float.MIN_VALUE}")
     println("double 的最大值：${Double.MAX_VALUE}   和它的最小值：${Double.MIN_VALUE}")
+}
+
+fun  inc(num:Int){
+    val num =2
+    if (num>0){
+        val num =3
+    }
+    println("inc  "+num)
 }
