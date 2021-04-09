@@ -1,0 +1,7 @@
+#Thu Sep 24 16:04:07 CST 2020
+base.0=F\:\\annikids\\Kotlindemo\\kotlin\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out
+path.1=classes.dex
+renamed.1=classes2.dex
+path.0=classes.dex
+renamed.0=classes.dex
+base.1=F\:\\annikids\\Kotlindemo\\kotlin\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out

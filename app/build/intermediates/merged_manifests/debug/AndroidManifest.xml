@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.river.kotlindemo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="28" />
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:name="com.river.kotlindemo.base.KotlinApplication"
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <service
+            android:name="com.river.kotlindemo.service.WindowService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name="com.river.kotlindemo.activitys.SecondActivity" />
+        <activity android:name="com.river.kotlindemo.activitys.LoginActivity" />
+        <activity
+            android:name="com.river.kotlindemo.activitys.MainActivity"
+            android:launchMode="singleInstance" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="com.river.kotlindemo.receivers.WindowShowRecriver" >
+            <intent-filter>
+                <action android:name="kotlin" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.river.kotlindemo.floatWindow.FloatScreenService" />
+        <service android:name="com.river.kotlindemo.service.WindowFloatService" />
+    </application>
+
+</manifest>
